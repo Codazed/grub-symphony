@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "grub-symphony"
+version = "1.1.0"
+description = "A python script to convert MIDI to a GRUB init tune"
+authors = []
+license = "AGPL-3.0"
+readme = "README.md"
+packages = [{ include = "grub_symphony" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pretty_midi = "0.2.10"
+
+[tool.poetry.scripts]
+grub_symphony = "grub_symphony:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
