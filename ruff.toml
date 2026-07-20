@@ -1,0 +1,27 @@
+line-length = 100
+
+[format]
+nested-string-quote-style = "preferred"
+quote-style = "double"
+
+[lint]
+select = [
+    "ARG",
+    "B",
+    "COM",
+    "C4",
+    "E",
+    "FIX",
+    "I",
+    "N",
+    "PERF",
+    "PT",
+    "PTH",
+    "Q",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "UP",
+    "W",
+]

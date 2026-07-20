@@ -2,7 +2,7 @@
 A python script to convert MIDI to a GRUB init tune
 
 ## Requirements
-- Python 3.9 or later
+- Python 3.12 or later
 
 ## Instructions
 Clone the repo, then install the package with pip: `pip install .`
