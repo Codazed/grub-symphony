@@ -1,19 +1,37 @@
-[tool.poetry]
+[project]
 name = "grub-symphony"
 version = "1.1.0"
 description = "A python script to convert MIDI to a GRUB init tune"
-authors = ["Joshua Luce <luce@codazed.dev>"]
-license = "GPL-3.0-or-later"
+authors = [{ name = "Joshua Luce", email = "luce@codazed.dev" }]
+requires-python = ">=3.9,<4"
 readme = "README.md"
-packages = [{ include = "grub_symphony" }]
+license = "GPL-3.0-or-later"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["pretty_midi==0.2.10"]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-pretty_midi = "0.2.10"
-
-[tool.poetry.scripts]
+[project.scripts]
 grub_symphony = "grub_symphony:main"
 
+[tool.uv]
+
+[tool.uv.build-backend]
+module-name = ["grub_symphony"]
+module-root = ""
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.11.29,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.22",
+    "ty>=0.0.61",
+]
