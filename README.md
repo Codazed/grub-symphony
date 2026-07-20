@@ -37,4 +37,4 @@ most part
 This script is not perfect and probably won't be able to perfectly recreate every MIDI file thrown at it, so keep that in mind.
 
 ## License
-GRUB Symphony is licensed under the [GNU Affero General Public License v3.0](/LICENSE)
+GRUB Symphony is licensed under the [GNU General Public License v3.0](/LICENSE)
